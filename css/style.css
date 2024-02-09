@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2.5%;
+    position: sticky;
+}
+nav div, nav a{
+    width: 25%;
+    margin: 1% 0;
+}
+nav a{
+    margin: 2% 0;
+}
