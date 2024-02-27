@@ -17,7 +17,12 @@ $data = file_get_contents($url);
 $result = json_decode($data, true);
 //var_dump($result)
 for ($i=0; $i < count($result["data"]); $i++) { 
-    echo $result["data"][$i]["displayName"]."\n" ;
+    echo $result["data"][$i]["displayName"]."<br>";
+    echo $result["data"][$i]["description"]."<br>";
+    for ($j=0; $j < count($result["data"][$i]["abilities"]); $j++) {
+        echo $j+1 ." Ability : ".$result["data"][$i]["abilities"][$j]["displayName"];
+        echo ", description : ".$result["data"][$i]["abilities"][$j]["description"]."<br>";
+    }
 }
 ?>
 
