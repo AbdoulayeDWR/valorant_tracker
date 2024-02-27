@@ -29,4 +29,3 @@ for ($i=0; $i < count($result["data"]); $i++) {
 
 </body>
 </html>
-<body>
